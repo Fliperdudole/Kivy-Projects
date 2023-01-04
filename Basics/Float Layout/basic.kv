@@ -1,0 +1,22 @@
+<Button>:
+    font_size:40
+    size_hint: 0.5, 0.5
+
+
+
+<FloatLayout>:
+    Button:
+        id:b_btn
+
+        pos_hint: {"x":0.5, "top":1}
+        color:0,0,1,.5
+
+        text: "Brandon" if b_btn.state == "normal" else "loves you"
+
+    Button:
+        id:btn
+
+        color:1,0.5,1,1
+        background_color:1,1,1,0.5
+
+        text: "Michele" if btn.state == "normal" else "loves you"
